@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="isi">
+        <!-- header -->
+        <header>
+            <h2>To-Do List</h2>
+        </header>
+
+        <main>
+            <!-- form -->
+            <section id="form-section">
+                <form action="">
+                    <input type="text" placeholder="Add todo..." id="todo-input">
+                    <input type="date" name="" id="todo-date">
+                    <button type="button" onclick="addTodo()" id="add-todo">Add</button>
+                </form>
+            </section>
+
+
+            <!-- action -->
+            <section id="action-section">
+                <select id="sort-option" onchange="sortTodos()">
+                    <option value="">Sort By</option>
+                    <option value="date-asc">Tanggal ↑</option>
+                    <option value="date-desc">Tanggal ↓</option>
+                    <option value="text-asc">Nama (A-Z)</option>
+                    <option value="text-desc">Nama (Z-A)</option>
+                </select>
+
+                <button onclick="todoDelete()">Delete</button>
+            </section>
+
+            <!-- todo list -->
+            <section id="todo-list-section">
+                <table id="todo-table">
+                    <thead>
+                        <tr colspan="3">
+                            <th>No</th>
+                            <th>Task</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead id="table-body">
+
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

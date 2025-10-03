@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    max-width: 100%;
+    max-width: 100%;
+    background-color: rgba(238, 255, 0, 0.8);
+}
+
+#isi {
+    box-shadow: 0 0 10px #000000ab;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20dvh auto;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.904);
+    color: #333;
+    align-items: center;
+    justify-items: center;
+    max-width: 100dvh;
+    max-height: 70dvh;
+    overflow-x: hidden;
+}
+
+header {
+    color: rgba(0, 0, 0, .8);
+    text-align: center;
+    min-width: 100dvh;
+    border-bottom: 3px solid rgba(0, 0, 0, .8);
+    margin-bottom: 20px;
+}
+
+header h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+main {
+    min-width: 70dvh;
+    max-width: 100dvh;
+    max-height: 100dvh;
+    min-height: 40dvh;
+    align-items: center;
+}
+
+
+main section {
+    min-width: 100dvh;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#form-section {
+    display: flex;
+    justify-content: space-around;
+    height: 7dvh;
+}
+
+form input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 20dvh;
+    font-size: 1.2rem;
+}
+
+form input[type="text"] {
+    width: 50dvh;
+}
+
+form input[type="date"] {
+    width: 20dvh;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #00f30c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 5dvh;
+    font-size: 1.2rem;
+    width: 10dvh;
+    transition: .3s;
+}
+
+form button:hover {
+    background-color: #50db00;
+}
+
+
+#action-section {
+    display:flex;
+    flex-direction: row;
+    gap: 10px;  
+    align-items: center;
+    justify-content: space-around;
+    height: 5dvh;
+}
+
+#action-section select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 20dvh;
+    font-size: 1.2rem;
+}
+
+#action-section button {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10dvh;
+    height: 4dvh;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+
+#action-section button:hover {
+    background-color: #e04343;
+}
+
+
+
+#todo-table {
+    min-width: 100%;
+    width: auto;
+    border-collapse: separate;
+    table-layout: fixed;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
